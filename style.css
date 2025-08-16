@@ -1,49 +1,50 @@
-/* This is how you reset default styles */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* This styles the whole body of the page */
+/* Body styles */
 body {
-    font-family: Arial, sans-serif; /* Sets the font */
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark text color */
-    line-height: 1.6; /* Makes text a bit more spaced out */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* This styles the header (top) of the page */
+/* Header styles */
 header {
-    background-color: #333; /* Dark background */
-    padding: 10px; /* Adds space around the text */
-    text-align: center; /* Centers the text inside the header */
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
+/* Navigation links */
 header nav a {
-    color: white; /* White text */
-    text-decoration: none; /* Removes the underline from links */
-    margin: 0 15px; /* Adds space between the links */
-    padding: 10px; /* Adds space around the text inside the links */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
 }
 
 header nav a:hover {
-    background-color: #575757; /* Darker background when you hover over the link */
+    background-color: #575757;
 }
 
-/* This styles the content of the page */
+/* Content section */
 section {
-    padding: 20px; /* Adds space inside the section */
-    margin: 20px; /* Adds space outside the section */
-    background-color: white; /* White background for the content */
-    border-radius: 8px; /* Rounds the corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow around the content */
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* This styles the footer at the bottom of the page */
+/* Footer styles */
 footer {
-    text-align: center; /* Centers the text */
-    padding: 10px; /* Adds space inside the footer */
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
