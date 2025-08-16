@@ -5,43 +5,116 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Fade-in keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Whole body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+
+    /* Page fade-in on load */
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
-/* Header styles */
+/* Header */
 header {
     background-color: #333;
     padding: 10px;
     text-align: center;
-}
 
-/* Navigation links */
+
+
+}
 header nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
     padding: 10px;
+    transition: background 0.3s ease;
 }
 
 header nav a:hover {
     background-color: #575757;
 }
 
-/* Content section */
+/* Generic section (visible by default, JS will animate) */
 section {
     padding: 20px;
     margin: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /* Start visible */
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease;
 }
 
-/* Footer styles */
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Text inside sections (visible by default) */
+section h1, section p {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease;
+}
+.btn {
+  display: inline-block;         /* makes it act like a button */
+  padding: 10px 20px;            /* space inside */
+  background-color: #4CAF50;     /* green background */
+  color: white;                  /* white text */
+  text-decoration: none;         /* removes underline */
+  border-radius: 5px;            /* rounded corners */
+  font-weight: bold;             /* bold text */
+  transition: background 0.3s ease; /* smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #45a049;     /* darker green when hovered */
+}
+.service {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.alt-contact {
+  margin-top: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+}
+
+.alt-contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.alt-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
